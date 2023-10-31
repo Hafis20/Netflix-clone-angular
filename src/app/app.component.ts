@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,HostListener, Output } from '@angular/core';
 
 @Component({
   selector: 'app-root',

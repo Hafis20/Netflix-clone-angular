@@ -1,1 +1,42 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@100;200;300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+   margin: 0;
+   padding: 0;
+   font-family: "Ubuntu", sans-serif;
+}
+
+body{
+   background-color: #000000;
+   overflow-x: hidden;
+}
+
+.rowposter{
+   display: flex;
+   overflow-y: hidden;
+   overflow-x: scroll;
+}
+
+.rowimg
+{
+    max-height: 100px;
+    object-fit: contain;
+    width: 100%;
+    box-sizing: content-box;
+    transition: transform 450ms;
+    margin-right: 5px;
+}
+
+.rowimg:hover{
+   transform: scale(1.08);
+   cursor: pointer;
+}
+
+.largeposter{
+   max-height: 300px;
+}
+
+.rowposter::-webkit-scrollbar
+{
+    display: none;
+}
